@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Machine learning systems design</title>
-    <script src="assets/scripts.js"></script>
+    <script src="assets\scripts.js"></script>
 
-    <link rel="stylesheet" href="assets/html.css">
+    <link rel="stylesheet" href="assets\html.css">
 
   </head>
   <body data-type="book">
@@ -41,7 +41,7 @@
 <p>In the last decade, machine learning systems have become exponentially larger, requiring exponentially more compute power and exponentially more data to train. According to <a href="https://openai.com/blog/ai-and-compute/">OpenAI</a>, &quot;<em>the amount of compute used in the largest AI training runs has doubled every 3.5 months.</em>&quot;</p>
 <p>From AlexNet in 2012 to AlphaGo Zero in 2018, the compute power required increased 300,000 times. The architectural search that resulted in AmoebaNets by the Google AutoML team required 450 K40 GPUs for 7 days (<a href="https://arxiv.org/abs/1802.01548">Regularized Evolution for Image Classifier Architecture Search</a>, Real et al., 2018). If done on one GPU, it&apos;d have taken 9 years.</p>
 <center>
-<img alt="AI and Compute" src="assets/ai_compute.png" style="float: center; max-width: 60%; margin: 0 0 1em 1em">
+<img alt="AI and Compute" src="assets\ai_compute.png" style="float: center; max-width: 60%; margin: 0 0 1em 1em">
 </center>
 <p>These massive models make ideal headlines, not ideal products. They are too expensive to train, too big to fit onto consumer devices, and too slow to be useful to users. When I talk to companies that want to use machine learning in production, many tell me that they want to do what leading research labs are doing, and I have to explain to them that they don&apos;t.</p>
 <p>There&apos;s undeniably a lot of value in fundamental research. These big models might eventually be useful as the community figures out a way to make them smaller and faster, or can be used as pretrained models on top of which consumer products are developed. However, the goals of research are very different from the goals of production. When asked by engineers to develop systems to be used in production, you need to keep the production goals in mind.</p>

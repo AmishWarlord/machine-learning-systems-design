@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Machine learning systems design</title>
     
-    <link rel="stylesheet" href="assets/pdf.css">
+    <link rel="stylesheet" href="assets\pdf.css">
 
   </head>
   <body data-type="book">
@@ -109,7 +109,7 @@
 <p>In the last decade, machine learning systems have become exponentially larger, requiring exponentially more compute power and exponentially more data to train. According to <a href="https://openai.com/blog/ai-and-compute/">OpenAI</a>, &quot;<em>the amount of compute used in the largest AI training runs has doubled every 3.5 months.</em>&quot;</p>
 <p>From AlexNet in 2012 to AlphaGo Zero in 2018, the compute power required increased 300,000 times. The architectural search that resulted in AmoebaNets by the Google AutoML team required 450 K40 GPUs for 7 days (<a href="https://arxiv.org/abs/1802.01548">Regularized Evolution for Image Classifier Architecture Search</a>, Real et al., 2018). If done on one GPU, it&apos;d have taken 9 years.</p>
 <center>
-<img alt="AI and Compute" src="assets/ai_compute.png" style="float: center; max-width: 60%; margin: 0 0 1em 1em">
+<img alt="AI and Compute" src="assets\ai_compute.png" style="float: center; max-width: 60%; margin: 0 0 1em 1em">
 </center>
 <p>These massive models make ideal headlines, not ideal products. They are too expensive to train, too big to fit onto consumer devices, and too slow to be useful to users. When I talk to companies that want to use machine learning in production, many tell me that they want to do what leading research labs are doing, and I have to explain to them that they don&apos;t.</p>
 <p>There&apos;s undeniably a lot of value in fundamental research. These big models might eventually be useful as the community figures out a way to make them smaller and faster, or can be used as pretrained models on top of which consumer products are developed. However, the goals of research are very different from the goals of production. When asked by engineers to develop systems to be used in production, you need to keep the production goals in mind.</p>
@@ -124,7 +124,7 @@
 </ul>
 <p>When asked to design a machine learning system, you need to consider all of these components.</p>
 <center>
-<img alt="Machine learning project flow" src="assets/ml_project_flow.png" style="float: center; max-width: 45%; margin: 0 0 1em 1em">
+<img alt="Machine learning project flow" src="assets\ml_project_flow.png" style="float: center; max-width: 45%; margin: 0 0 1em 1em">
 </center>
 <section data-type="sect1" id="project-setup-zlkQIG9"><h1>Project setup</h1>
 <p>Before you even say neural network, you should first figure out as much detail about the problem as possible.</p>
@@ -162,7 +162,7 @@
 <p>Modeling, including model selection, training, and debugging, is what&apos;s often covered in most machine learning courses. However, it&apos;s only a small component of the entire process. Some might even argue that it&apos;s the easiest component.</p>
 <center>
 <figure>
-<img alt="xkcd&apos;s modeling" src="assets/modeling.png" style="float: center; max-width: 45%; margin: 0 0 1em 1em">
+<img alt="xkcd&apos;s modeling" src="assets\modeling.png" style="float: center; max-width: 45%; margin: 0 0 1em 1em">
 <figcaption>Source: xkcd</figcaption>
 </figure>
 </center>
@@ -190,7 +190,7 @@
 <p>Have you ever experienced the euphoria of having your model work flawlessly on the first run? Neither have I. Debugging a machine learning model is hard, so hard that poking fun at how incompetent we are at debugging machine learning models has become a sport.</p>
 <center>
 <figure>
-<img alt="Debugging joke" src="assets/debugging.png" style="float: center; max-width: 50%; margin: 0 0 1em 1em">
+<img alt="Debugging joke" src="assets\debugging.png" style="float: center; max-width: 50%; margin: 0 0 1em 1em">
 <figcaption>Typo: idpb is supposed to be ipdb, python interactive debugger tool</figcaption>
 </figure>
 </center>
